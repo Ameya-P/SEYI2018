@@ -1,6 +1,6 @@
-##Stanford Earth Young Investigators 2018
+## Stanford Earth Young Investigators 2018
 
-###_Ameya Patkar_
+### _Ameya Patkar_
 
 #### This summer...we will do these activities...
 
