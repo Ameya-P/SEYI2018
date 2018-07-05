@@ -1,0 +1,313 @@
+EyeColor <- c("Red","Blue","Green","Yellow")
+Name <- c("Janice","Katey","Amy","Deborah")
+Info <- data.frame(Height,EyeColor, row.name(Name))
+Info <- data.frame(Height,EyeColor, row.names(Name))
+Info <- data.frame(Height,EyeColor, row.names = Names)
+Info <- data.frame(Height,EyeColor, row.names = Name)
+Info
+Info <- data.frame(Height,EyeColor, row.names = Name, stringAsFactors=FALSE)
+Info
+Info <- data.frame(Height,EyeColor, row.names = Name, stringsAsFactors=FALSE)
+Info
+class(mtcars)
+class(precip)
+is(precip, "vector")
+as(trees, "matrix")
+precip[14]
+c(mtcars,precip,trees)
+class(precip)
+typeOf(precip)
+typeof(precip)
+mtcars[2,7]
+mtcars[Mazda RX4 Wag, qsec]
+mtcars["Mazda RX4 Wag", "qsec"]
+mtcars[2, "qsec"]
+precip[1,2] <- 23,23
+How would you change the precipitation values of "Juneau", "Phoenix", and "Sacramento" to 23, 46, and 12 in the precip dataset. (Hint: You will need to use subscripts and the <- operator).
+precip[1:3] <- 23
+precrip
+precip
+precip[c(1,2,6)] <- 23
+precip[c(1,2,6)] <- c(23,22)
+precip[c(1,2,6)] <- c(23,46,12)
+precip
+precip[c(2,3,6)] <- c(23,46,12)
+precip
+any(trees[Girth] > trees[Volume])
+Are there any trees in the trees dataset with more girth than volume? How did you find out?any(trees[Girth] > trees[Volume])
+any(trees[Girth][1:6] > trees[Volume][1:6])
+any(Girth[1:6] > Volume[1:6])
+any(trees[Girth][26:31] > trees[Volume][26:31])
+any(trees["Girth"][1:6] > trees["Volume"][1:6])
+any(trees["Girth"] > trees["Volume"])
+as(trees, "data.frame")
+sum(trees["Height"])
+A <- sum(trees["Height"])
+B <- sum(mtcars["Valiant"])
+trees
+precrip
+precip
+trees
+precip
+precip[1] <- 67
+precip[2] <- 54.7
+precip[3] <- 7
+precip[4] <- 48.5
+precip[6] <- 17.2
+mtcars
+mtcars["Valiant"]
+colSums[trees["Height"]]
+A <- sum(trees["Height"])
+B <- rowSums(mtcars["Valiant"])
+B <- rowSums(mtcars["Valiant",])
+B <- sum(mtcars["Valiant",])
+C <- sum(precip[1:8])
+(C/B)+A
+Array <- array(data: TRUE, FALSE, dim: 8)
+Array <- array(data= TRUE, FALSE, dim= 8)
+Array <- array(data= c(TRUE, FALSE), dim= 8)
+which(Array)
+Array[which(Array)]
+set.seed(541)
+MatrixElements<-sample(c(TRUE,FALSE), size = 96, replace = TRUE)
+myMatrix<-array(data=MatrixElements,dim=c(8,12))
+myMatrix
+?sample
+MatrixElements<-sample(c(TRUE,FALSE), size = 96, replace = FALSE)
+yourMatrix <- myMatrix * 1
+yourMatrix
+set.seed(154)
+MatrixElements <- sample(c(1,2,3,4,5,6,7,8,9,10), size = 96, replace=TRUE)
+myMatrix <- matrix(MatrixElements, 8,12)
+myMatrix
+which(Array == 7)
+myLogical <- Array == 7
+myLogical
+myLogical <- myMatrix == 7
+myLogical
+which(myLogical)
+which(myMatrix == 7)
+length(which(myMatrix==7))
+set.seed(541)
+MatrixElements<-sample(c(TRUE,FALSE), size = 96, replace = TRUE)
+byeMatrix<-array(data=MatrixElements,dim=c(8,12))
+byeMatrix
+apply(byeMatrix, 1, which)
+apply(byeMatrix, 1, all)
+apply(myMatrix, 2, sum)
+apply(myMatrix, 1, sum)
+apply(myMatrix, 1, prod)
+pply(myMatrix, 2, prod)
+apply(myMatrix, 2, prod)
+hisMatrix <- myMatrix
+hisMatrix[which(10)]<-12
+hisMatrix[which(hisMatrix == 10)]<-12
+hisMatrix
+length(which(myMatrix > 3 & myMatrix < 8))
+theirMatrix <- myMatrix
+as(theirMatrix, "data.frame")
+?data.frame
+myDataFrame <- data.frame(myMatrix[1:11,], c(as.character(myMatrix[12,])))
+myDataFrame <- data.frame(myMatrix[1,:11,], c(as.character(myMatrix[12,])))
+DataFrame <- data.frame(myMatrix[(1:11),], c(as.character(myMatrix[12,])))
+DataFrame <- data.frame(myMatrix[,1:11], c(as.character(myMatrix[,12])))
+DataFrame
+as.data.frame(theirMatrix)
+theirMatrix[,12] <- as.character(theirMatrix[,12])
+theirMatrix
+theyMatrix <- myMatrix
+theyMatrix <- as.data.frame(theyMatrix)
+theyMatrix[,12] <- as.character(theyMatrix[,12])
+theyMatrix
+theyMatrix[1,12] <- "5"
+theyMatrix
+myMatrix[which(apply(myMatrix,1,sum),)]
+myMatrix[which(apply(myMatrix,1,sum)),]
+myMatrix[which(apply(myMatrix,1,sum) > 70),]
+which(apply(myMatrix,1,sum) > 70)
+myMatrix <- as.data.frame(myMatrix)
+apply(myMatrix, 1,sum)
+apply(myMatrix,1,sum)>70
+> myMatrix <- data.frame(myMatrix, c(apply(myMatrix,1,sum) > 70))
+myMatrix <- data.frame(myMatrix, apply(myMatrix,1,sum)>70)
+myMatrox
+myMatrix
+TestFunction <- function(){}
+TestFunction <- function(SingularWord){c(SingularWord, "s")}
+TestFunction("Donut")
+TestFunction <- function(SingularWord){print(c(SingularWord, "s"))}
+TestFunction
+TestFunction("Donut")
+> TestFunction <- function(SingularWord){ SingularWord <- c(SingularWord, "s")}
+TestFunction <- function(SingularWord){  SingularWord <- c(SingularWord, "s") return(SingularWord) }
+MyFunction<-function(Argument) {#
+    print(Argument)#
+    }
+MyFunction(test)
+myFunction("Test")
+mMFunction("Test")
+MyFunction("Test")
+TestFunction <- function(SingularWord){  + SingularWord <- c(SingularWord, "s") + return(SingularWord) }
+myfunction <- function(arg1, arg2, ... ){#
+statements#
+return(object)#
+}
+myfunction <- function(arg1){ statments return(object) }
+TestFunction <- function(Singular){ + Singular <- c(SingularWord) + return(Singular)}
+TestFunction <- function(Singular){, + Singular <- c(SingularWord), + return(Singular)}
+TestFunction <- function(SingularWord){  SingularWord <- c(SingularWord, "s") return(SingularWord) }
+DoubleIt<-function(Argument) {#
+    Answer<-Argument*2#
+    return(Answer)#
+    }
+Test     test
+DoubleIt<-function(Argument) {#
+Answer<-Argument*2#
+    return(Answer)#
+    }
+It is amazing! The All Star Grannies scored#
+a total of 71 baskets in the last six games!
+"Test Test test"
+baskets.of.Geraldine <-#
+     c(5,3,2,2,12,9)#
+Intro <- "It is amazing! The All Star Grannies scored#
+a total of"#
+Outro <- "baskets in the last six games!"#
+Total.baskets <- baskets.of.Granny +#
+        baskets.of.Geraldine#
+Text <- paste(Intro,#
+       sum(Total.baskets),#
+       Outro)#
+cat(Text)
+TestFunction <- function(SingularWord){ Singular <- c(Singular, "s") }
+test test
+test
+test + jfkdl
+test
+fds#
+f
+test test
+HelloWorld <- function(){#
+return("Hello, World.")#
+}
+HelloWorld
+HelloWorld()
+iris
+IrisFunction<-function(iris) {#
+  Setosa<-iris[which(iris[,"Species"]=="setosa"),]#
+  Virginica<-iris[which(iris[,"Species"]=="virginica"),]#
+  Versicolor<-iris[which(iris[,"Species"]=="versicolor"),]#
+  return(list(Setosa,Virginica,Versicolor)#
+  }
+IrisFunction<-function(Dataset,Column) {#
+  Categories<-unique(Dataset[ ,Column])#
+  BlankList<-list()#
+  for (i in 1:length(Categories)) {#
+      BlankList[[i]]<-Dataset[which(Dataset[,Column]==Categories[i]),]#
+      }#
+  return(BlankList)#
+  }#
+> IrisFunction(iris,"Species")
+IrisFunction<-function(iris) {#
+  Setosa<-iris[which(iris[,"Species"]=="setosa"),]#
+  Virginica<-iris[which(iris[,"Species"]=="virginica"),]#
+  Versicolor<-iris[which(iris[,"Species"]=="versicolor"),]#
+  return(list(Setosa,Virginica,Versicolor)#
+  }
+Virginia
+iris
+iris[Species]
+iris["Species"]
+iris["Species"][1]
+iris["Species",1]
+Species <- iris["Species"]
+Species[2]
+Species[1,]
+iris[1,"Species"]
+which(iris["Species"] == "setosa")
+iris(which(iris["Species"] == "setosa"))
+iris(which(,iris["Species"] == "setosa"))
+iris(,which(iris["Species"] == "setosa"))
+iris(which(iris["Species"] == "setosa"),)
+iris[,which(iris["Species"] == "setosa")]
+iris[which(iris["Species"] == "setosa")]
+iris[,which(iris["Species"] == "setosa"),]
+which(iris["Species"] == "setosa
+done
+heck
+return
+return()
+which(iris["Species"] == "setosa
+k
+iris[,which(iris["Species"] == "setosa")]
+which(iris["Species"]=="setosa")
+iris[1]
+iris[,1
+}
+iris[,1]
+iris[1,]
+iris[which(iris["Species"] == "setosa"),]
+Iris <- function(iris) {#
+Setosa <- iris[which(iris["Species"] == "setosa"),]#
+Versicolor <- iris[which(iris["Species"] == "versicolor"),]#
+Virginica <- iris[which(iris["Species"] == "virginica"),]#
+return(c(Setosa,Versicolor,Virginica)#
+}
+Iris <- function(iris) {#
+Setosa <- iris[which(iris["Species"] == "setosa"),]#
+Versicolor <- iris[which(iris["Species"] == "versicolor"),]#
+Virginica <- iris[which(iris["Species"] == "virginica"),]#
+return(c(Setosa,Versicolor,Virginica))#
+}
+Iris(iris)
+Iris <- function(iris) {#
+Setosa <- iris[which(iris["Species"] == "setosa"),]#
+Versicolor <- iris[which(iris["Species"] == "versicolor"),]#
+Virginica <- iris[which(iris["Species"] == "virginica"),]#
+return(list(Setosa,Versicolor,Virginica)#
+}
+Iris <- function(iris) {#
+Setosa <- iris[which(iris["Species"] == "setosa"),]#
+Versicolor <- iris[which(iris["Species"] == "versicolor"),]#
+Virginica <- iris[which(iris["Species"] == "virginica"),]#
+return(list(Setosa,Versicolor,Virginica))#
+}
+Iris(iris)
+GeologicPlot <- plot(x,y,type ="n", xlim = c(500,0), ylim = c(-2,12), log = "", main = "Size History of Marine Animals Over the Phanerozoic", sub = NULL, xlab = "Geologic Time", ylab = "Biovolume in units of log10 mm^3" )
+?lines
+setwd("/Users/seyib/SEYI2018/RExercises")
+SizeData <- read.delim("https://stacks.stanford.edu/file/druid:rf761bx8302/supplementary_data_file.txt")
+TimeScale <- read.delim("https://raw.githubusercontent.com/naheim/paleosizePaper/master/rawDataFiles/timescale.txt")
+plot(x,y,type ="n", xlim = c(500,0), ylim = c(-2,12), log = "", main = "Size History of Marine Animals Over the Phanerozoic", sub = NULL, xlab = "Geologic Time", ylab = "Biovolume in units of log10 mm^3" )
+head(SizeData)
+?lines
+dim(SizeData)
+ChordataSizeData <- which(SizeData[which(SizeData["Phylum"] == "Chordata"),])
+ChordataSizeData <- SizeData[which(SizeData["Phylum"] == "Chordata"),]
+ChordataSizeData <- SizeData[which(SizeData["phylum"] == "Chordata"),]
+head(ChordataSizeData)
+segments(ChordataSizeData$fad_age,ChordataSizeData$log10_volume, ChordataSizeData$lad_age, ChordataSizeData$log10_volume, col = "blueviolet" )
+ArthropodaSizeData <- SizeData[which(SizeData["phylum"] == "Arthropoda"),]
+segments(ArthropodaSizeData$fad_age,ArthropodaSizeData$log10_volume, ArthropodaSizeData$lad_age, ArthropodaSizeData$log10_volume, col = "firebrick1" )
+BrachiopodaSizeData <- SizeData[which(SizeData["phylum"] == "Brachiopoda"),]
+segments(BrachiopodaSizeData$fad_age,BrachiopodaSizeData$log10_volume, BrachiopodaSizeData$lad_age, BrachiopodaSizeData$log10_volume, col = "gold" )
+EchinodermataSizeData <- SizeData[which(SizeData["phylum"] == "Echinodermata"),]
+segments(EchinodermataSizeData$fad_age,EchinodermataSizeData$log10_volume, EchinodermataSizeData$lad_age, EchinodermataSizeData$log10_volume, col = "forestgreen" )
+MolluscaSizeData <- SizeData[which(SizeData["phylum"] == "Mollusca"),]
+segments(MolluscaSizeData$fad_age,MolluscaSizeData$log10_volume, MolluscaSizeData$lad_age, MolluscaSizeData$log10_volume, col = "dodgerblue" )
+head(TimeScale)
+NewData <- sizeData[sizeData $fad_age > timescale$age_top[i] & sizeData $lad_age < timescale$age_bottom[i], ]
+NewData <- SizeData[SizeData $fad_age > timescale$age_top[i] & SizeData $lad_age < timescale$age_bottom[i], ]
+NewData <- SizeData[SizeData $fad_age > TimeScale$age_top[i] & SizeData $lad_age < TimeScale$age_bottom[i], ]
+for(i in TimeScale[interval_name]) {
+NewData <- SizeData[SizeData $fad_age > TimeScale$age_top[i] & SizeData $lad_age < TimeScale$ag
+.
+NewData <- data.frame()
+NewData <- SizeData[SizeData $fad_age > TimeScale$age_top["Holocene"] & SizeData $lad_age < TimeScale$age_bottom["Holocene"], ]
+NewData
+head(newData)
+head(NewData)
+head(SizeData[SizeData $fad_age > TimeScale$age_top["Holocene"] & SizeData $lad_age < TimeScale$age_bottom["Holocene"], ])
+SizeData[SizeData $fad_age > TimeScale$age_top[i] & SizeData $lad_age < TimeScale$age_bottom[i], ]["log10_volume"].
+for(Interval in TimeScale["interval_name"]){
+SizeData[SizeData $fad_age > TimeScale$age_top[Interval] & SizeData $lad_age < TimeScale$age_bottom[Interval], ]["log10_volume"].
