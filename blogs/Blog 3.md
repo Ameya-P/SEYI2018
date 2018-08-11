@@ -1,5 +1,5 @@
 ## Blog 3 (August 10, 2018): ...
-### Ameya Patkar
+### by Ameya Patkar
 
 
 <img src="https://github.com/Ameya-P/SEYI2018/blob/master/images/Loc%20and%20Ameya's%20Intern%20Presentation.png" alt="Shell" width="959" height="264">
