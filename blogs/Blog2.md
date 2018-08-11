@@ -1,4 +1,4 @@
-## Blog 2 (July 20th 2018): Time is Passing by Way too Quickly
+## Blog 2 (July 20, 2018): Time is Passing by Way too Quickly
 ### _by Ameya Patkar_
 
 It’s my fifth week in the Stanford Earth Young Investigators Program and I can’t believe we are over halfway done. It’s startling how fast the summer has passed and how I’m inching closer and closer to my final year of high school. Even though it still feels like very little time has passed, we’ve explored a plethora of places here in the Bay and in Central California as well as learned about a ton of topics in Geology, Paleobiology, and coding.
